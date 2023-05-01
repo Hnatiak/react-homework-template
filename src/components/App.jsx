@@ -1,16 +1,14 @@
-export const App = () => {
+import React from 'react';
+// import './App.css';
+import Game from './game/Game';
+
+function App() {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+        <div className="App" style={{display: 'flex', justifyContent: 'center'}}>
+          <Game />
+        </div>
   );
-};
+}
+
+export default App;
+
